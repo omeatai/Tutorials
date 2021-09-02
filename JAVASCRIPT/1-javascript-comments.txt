@@ -13,7 +13,43 @@ multi-line comment */
 
 NOTE: As you write code, you should regularly add comments to clarify the function of parts of your code. Good commenting can help communicate the intent of your code—both for others and for your future self.
 
-############################################################################
+-------------------------
+Question:
+-------------------------
+Create in-line and multi-line style comments..
 
-Create in-line and multi-line style comments that contains at least five letters.
+-----------------------
+Solution:
+-----------------------
+<!DOCTYPE html>
+<html>
+<body>
 
+<h1 id="myH"></h1>
+<p id="myP"></p>
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+// Change heading:
+document.getElementById("myH").innerHTML = "JavaScript Comments";
+// Change paragraph:
+document.getElementById("myP").innerHTML = "My first paragraph.";
+
+let x = 5;      // Declare x, give it the value of 5
+let y = x + 2;  // Declare y, give it the value of x + 2 
+
+// Write y to demo:
+document.getElementById("demo").innerHTML = y;
+
+/*
+The code below will change
+the paragraph with id = "demo2"
+in my web page:
+*/
+
+document.getElementById("demo2").innerHTML = "David";
+</script>
+
+</body>
+</html>
