@@ -1,0 +1,349 @@
+###################################### Basic JavaScript ######################################
+
+Show Javascript comment
+//This is a comment 
+/This is Another comment/
+
+Create a Variable
+var myName;
+
+Assign the value 7 to variable a.
+var a; a = 7;
+
+4.Declare a "myVar" variable with no value, then assign it the value 5. Next, a variable named "myNum" is declared with no value. Then, the contents of myVar (which is 5) is assigned to the variable myNum. Show it.
+
+var myVar; myVar = 5; var myNum; myNum = myVar;
+
+5.Create a new variable called "myVar" and assign it an initial value of 0. Define a variable "a" with var and initialize it to a value of 9.
+
+var myVar = 0; var a = 9;
+
+6.Create a new variable called "myVar" and assign it an initial value of 87. Add 1 to the variable.
+
+var myVar = 87; myVar++;
+
+7.Create a new variable called "myVar" and assign it an initial value of 11. Subtract 1 from the variable.
+
+var myVar = 11; myVar--;
+
+8.Set the variable "remainder" to equal to the remainder of 11 divided by 3 using the modulus operator.
+
+var remainder = 11%3;
+
+9.Create a new variable called "myVar" and assign it an initial value of 1. Add 5 to the variable and log out the result as myVar.
+
+var myVar = 1; myVar += 5; console.log(myVar);
+
+10.Create a new variable called "myVar" and assign it an initial value of 11. Subtract 5 from the variable and log out the result as myVar.
+
+var myVar = 11; myVar -= 5; console.log(myVar);
+
+11.Create two new string variables: myFirstName and myLastName and assign them the values of your first and last name, respectively.
+
+var myFirstName = "Ifeanyi"; var myLastName = "Omeata";
+
+12.Use backslashes to assign a string to the "myStr" variable so that if you were to print it to the console, you would see: I am a "double quoted" string inside "double quotes".
+
+var myStr = "I am a "double quoted" string inside "double quotes".";
+
+13.Assign the following three lines of text into the single variable "myStr" using escape sequences.
+
+FirstLine
+    \SecondLine
+ThirdLine
+var myStr = "FirstLine\n\t\SecondLine\nThirdLine"; console.log(myStr);
+
+14.Build myStr from the strings: "This is the start." and "This is the end." using the + operator.
+
+var myStr = "This is the start. " + "This is the end.";
+
+15.Build myStr over several lines by concatenating these two strings: "This is the first sentence." and "This is the second sentence."
+
+var myStr = "This is the first sentence. "; myStr += "This is the second sentence.";
+
+16.Set "myName" to a string equal to your name and build "myStr" with "myName" between the strings: "My name is" and "and I am well!"
+
+var myName = "Ifeanyi Omeata"; var myStr = "My name is " + myName + " and I am well!";
+
+17.Set "someAdjective" to a string of at least 3 characters and append it to "myStr" with the string "Learning to code is ".
+
+var someAdjective = "fantastic"; var myStr = "Learning to code is "; myStr += someAdjective;
+
+18.Count the number of characters in the "lastName" variable "Lovelace" and assign it to "lastNameLength".
+
+var lastName = "Lovelace"; var lastNameLength; lastNameLength = lastName.length;
+
+19.Use bracket notation to find the first character in the "lastName" variable "Lovelace" and assign it to "firstLetterOfLastName".
+
+var lastName = "Lovelace"; var firstLetterOfLastName; firstLetterOfLastName = lastName[0];
+
+20.Use bracket notation to find the last character in the "lastName" variable "Lovelace".
+
+var lastName = "Lovelace"; var lastLetterOfLastName = lastName[lastName.length - 1];
+
+21.Use bracket notation to find the second-to-last character in the lastName string "Lovelace".
+
+var lastName = "Lovelace"; var secondToLastLetterOfLastName = lastName[lastName.length - 2];
+
+22.Create a new array "myArray" so that it contains both a string and a number (in that order).
+
+var myArray = ["Smith",40];
+
+23.Create a nested array called "myArray".
+
+var myArray = [["James",35], ["Mary", 20]];
+
+24.Create a variable called myData and set it to equal the first value of "myArray" [50,60,70] using bracket notation.
+
+var myData; var myArray = [50,60,70]; myData = myArray[0];
+
+25.Modify the data stored at index 0 of myArray [18,64,99] to a value of 45.
+
+var myArray = [18,64,99]; myArray[0] = 45; console.log(myArray);
+
+26.Using bracket notation select an element from myArray: [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]] such that myData is equal to 8.
+
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]]; var myData = myArray[2][1];
+
+27.Push ["dog", 3] onto the end of the myArray [["John", 23], ["cat", 2]] variable.
+
+var myArray = [["John", 23], ["cat", 2]]; myArray.push(["dog", 3]);
+
+28.Use the Pop function to remove the last item from myArray: [["John", 23], ["cat", 2]], assigning the popped off value to removedFromMyArray.
+
+var myArray = [["John", 23], ["cat", 2]]; var removedFromMyArray = myArray.pop();
+
+29.Use the Shift function to remove the first item from myArray [["John", 23], ["dog", 3]], assigning the "shifted off" value to removedFromMyArray.
+
+var myArray = [["John", 23], ["dog", 3]]; var removedFromMyArray = myArray.shift();
+
+30.Add ["Paul",35] to the beginning of the myArray: [["John", 23], ["dog", 3]] variable using Unshift function.
+
+var myArray = [["John", 23], ["dog", 3]]; myArray.unshift(["Paul",35]);
+
+31.Create a shopping list in the variable myList. The list should be a multi-dimensional array containing several sub-arrays. The first element in each sub-array should contain a string with the name of the item. The second element should be a number representing the quantity. There should be at least 5 sub-arrays in the list.
+
+var myList = [["Chocolate Bar", 14], ["Detergent soap", 15], ["Oat meal", 20], ["Spagetti", 10], ["Mangoes", 12], ["Mars Bars", 67]];
+
+32.Create a function called reusableFunction which prints the string "Hi World" to the dev console. Call the function.
+
+function reusableFunction(){ console.log("Hi World"); } reusableFunction();
+
+33.Create a function called functionWithArgs that accepts two arguments and outputs their sum to the dev console. Call the function with two numbers as arguments.
+
+function functionWithArgs(arg1, arg2){ console.log(arg1 + arg2); } functionWithArgs(2,4);
+
+34.Add a local variable to myOutfit function to override the value of outerWear "T-Shirt" with the string sweater.
+
+var outerWear = "T-Shirt"; function myOutfit(){ var outerWear = "sweater"; return outerWear; } myOutfit();
+
+35.Create a function timesFive that accepts one argument, multiplies it by 5, and returns the new value.
+
+function timesFive(num){ return num*5;
+} var result = timesFive(7); console.log(result);
+
+36.Write a function nextInLine which takes an array (arr) and a number (item) as arguments. Add the number to the end of the array, then remove the first element of the array. The nextInLine function should then return the element that was removed.
+
+function nextInLine(arr, item) { arr.push(item); var removed = arr.shift(); return removed;
+} var testArr = [1,2,3,4,5]; console.log("Before: " + JSON.stringify(testArr)); console.log(nextInLine(testArr, 6)); console.log("After: " + JSON.stringify(testArr));
+
+37.Create an if statement inside the function "trueOrFalse" to return "Yes, that was true" if the parameter "wasThatTrue" is true and return "No, that was false" otherwise.
+
+function trueOrFalse(wasThatTrue) { if(wasThatTrue){ return "Yes, that was true"; } return "No, that was false"; }
+
+38.Determine the type of a variables for the following: name = John, age = 24, inAttendance = true.
+
+var name = "John"; var age = 24; var inAttendance = true; console.log(typeof(name)); console.log(typeof(age)); console.log(typeof(inAttendance));
+
+39.Create a function testNotEqual, with an if statement so that the function will return the string "Not Equal" when val is not equivalent to 99.
+
+function testNotEqual(val){ if(val != 99){ return "Not Equal"; } return "Equal"; } result = testNotEqual(10); console.log(result);
+
+40.Write a function "testLogicalAnd" that has an if statement which will return the string "Yes" if val is less than or equal to 50 and greater than or equal to 25. Otherwise, will return the string "No".
+
+function testLogicalAnd(val){ if(val<=50 && val>=25){ return "Yes"; } return "No" }
+
+41.Write a function "testElseIf" that has if statements which will return the string "Greater than 10" if val is greater than 10, or will return "Smaller than 5" if val is less than 5, otherwise, will return the string "Between 5 and 10".
+
+function testElseIf(val){ if(val>10){ return "Greater than 10"; }else if(val<5){ return "Smaller than 5"; }else{ return "Between 5 and 10"; } } testElseIf(7);
+
+42.Write chained if/else if statements with function "testSize" to fulfill the following conditions: num < 5 - return Tiny num < 10 - return Small num < 15 - return Medium num < 20 - return Large num >= 20 - return Huge
+
+function testSize(num){ if(num < 5){ return "Tiny"; }else if(num < 10){ return "Small"; }else if(num < 15){ return "Medium"; }else if(num < 20){ return "Large"; }else{ return "Huge"; } } testSize(7);
+
+43.Write a switch statement in a function caseInSwitch, which tests val and sets answer for the following conditions: 1 - alpha 2 - beta 3 - gamma 4 - delta
+
+function caseInSwitch(val){ var answer = ""; switch(val){
+case 1: var answer = "alpha"; break; case 2: var answer = "beta"; break;
+case 3: var answer = "gamma"; break; case 4: var answer = "delta"; break; default: var answer = "none"; break;
+} return answer; }
+
+44.Write a switch statement in a function switchOfStuff, which tests val and sets answer for the following conditions: a - apple b - bird c - cat default - stuff
+
+function switchOfStuff(val){ var answer = ""; switch(val){ case "a": return "apple"; break; case "b": return "bird"; break; case "c": return "cat"; break; default: return "stuff"; break;
+} }
+
+45.Write a switch statement in a function sequentialSizes, which tests val and sets answer for the following ranges: 1-3 - Low 4-6 - Mid 7-9 - High
+
+function sequentialSizes(val){ var answer = ""; switch(val){ case 1: case 2: case 3: return "Low"; break; case 4: case 5: case 6: return "Mid"; break; case 7: case 8: case 9: return "High"; break; default: return "None"; break;
+} }
+
+46.Make a function abTest, so that if a or b are less than 0 the function will immediately exit with a value of undefined, else it will return "No negative values".
+
+function abTest(a, b) { switch(true){ case (a < 0 || b < 0): return undefined; } return "No negative values"; } var result = abTest(1, 2); console.log(result); var result = abTest(-4, 2); console.log(result);
+
+OR
+
+function abTest(a, b) { if(a<0 || b<0){ return undefined; } return "No negative values"; } var result = abTest(1, 2); console.log(result); var result = abTest(-4, 2); console.log(result);
+
+47.Write a card counting function "cc". It will receive a "card" parameter, which can be any: [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A']. It will increment or decrement the global count variable according to the card's value. This means that if the "card" parameter is any of: [2, 3, 4, 5, 6] => count change is +1. [7, 8, 9] => count change is 0. [10, 'J', 'Q', 'K', 'A'] => count change is -1. The function should return a string with the current count and the string: "Bet" => if the count is positive "Hold" => if the count is zero or negative. The current count and the player's decision (Bet or Hold) should be separated by a single space. Example Outputs: -3 Hold or 5 Bet
+
+var count = 0; function cc(card){ switch(card){ case 2: case 3: case 4: case 5: case 6: count++; break; case 10: case 'J': case 'Q': case 'K': case 'A': count--; break; } if(count > 0){ return count + " " + "Bet"; }else{ return count + " " + "Hold"; }
+
+}
+
+48.Make an object that represents a dog called myDog which contains the properties name (a string), legs, tails and friends. You can set these object properties to whatever values you want, as long as name is a string, legs and tails are numbers, and friends is an array.
+
+var myDog = { "name": "betty", "legs": 4, "tails": 1, "friends": ["Katty","Cob","Rodio"] };
+
+49.From Question 48, add a new property to the object myDog, as bark => "Woof-Woof".
+
+myDog.bark = "Woof-Woof"; OR myDog["bark"] = "Woof-Woof";
+
+50.From Question 48, remove the object property legs.
+
+delete myDog.legs; OR delete myDog["legs];
+
+51.Create a function checkObj to test if an object (obj) passed to the function contains a specific property (checkProp). If the property is found, return that property's value. If not, return "Not Found".
+
+function checkObj(obj, checkProp) { if(obj.hasOwnProperty(checkProp)){ return obj[checkProp]; }else{ return "Not Found"; }
+}
+
+52.Add the numbers 5 through 0 (inclusive) in descending order to an array "myArray" using a while loop.
+
+var myArray = []; var i = 5; while(i >= 0){ myArray.push(i);
+i--; }
+
+53.Use a for loop to push the values 1 through 5 onto an array "myArray".
+
+var myArray = []; for(var i = 1; i <= 5; i++){ myArray.push(i); }
+
+54.Push the odd numbers from 1 through 9 to myArray using a for loop.
+
+var myArray = []; for(var i = 1; i < 10; i += 2){ myArray.push(i); }
+
+55.Push the odd numbers from 9 through 1 to myArray using a for loop.
+
+var myArray = []; for(var i = 9; i > 0; i -= 2){ myArray.push(i); }
+
+56.Declare and initialize a variable total to 0. Use a for loop to add the value of each element of the myArr array [ 2, 3, 4, 5, 6] to total.
+
+var total = 0; var myArr = [ 2, 3, 4, 5, 6]; for(var i = 0; i < myArr.length; i++){ total += myArr[i]; }
+
+57.Create a function multiplyAll so that it returns the product of all the numbers in the sub-arrays of an array arr [[1,2],[3,4],[5,6,7]].
+
+function multiplyAll(arr){ var product = 1; for(var i = 0; i < arr.length; i++){ for(var j = 0; j < arr[i].length; j++){ product *= arr[i][j]; } } return product; }
+
+58.Write a recursive function, sum(arr, n), that returns the sum of the first n elements of an array arr.
+
+function sum(arr, n){ if(n <= 0){ return 0; }else{ return sum(arr, n - 1) + arr[n - 1]; }
+}
+
+59.Generate a random decimal. Multiply that random decimal by 20. Round the number down to its nearest whole number.
+
+Math.floor(Math.random() * 20);
+
+60.Generate and return a random whole number between 0 and 9.
+
+Math.floor(Math.random() * 10);
+
+61.Create a function called randomRange that takes a range myMin and myMax and returns a random whole number that's greater than or equal to myMin, and is less than or equal to myMax, inclusive.
+
+function randomRange(myMin, myMax){ var x = Math.floor(Math.random() * (myMax + 1 - myMin)) + myMin; return x; }
+
+62.Create a function convertToInteger, so it converts the input string str into an integer, and returns it. Then convertToInteger("56").
+
+function convertToInteger(str){ return parseInt(str); } convertToInteger("56");
+
+63.Create a function convertToInteger, so it converts a binary number 10011 to an integer and returns it.
+
+function convertToInteger(str) { return parseInt(str, 2); } convertToInteger("10011");
+
+64.Use the conditional (Ternary) operator in a checkEqual function to check if two numbers a and b are equal or not. The function should return either "Equal" or "Not Equal".
+
+function checkEqual(a, b) { return a === b ? "Equal" : "Not Equal"; } checkEqual(1, 2);
+
+65.Create a function checkSign, to check if a number num is positive, negative or zero. The function should return positive, negative or zero.
+
+function checkSign(num){ return (num > 0) ? "positive" : (num < 0) ? "negative" : "zero"; }
+
+66.Write a recursive function "countup" that returns an array containing the numbers 1 through n. This function will need to accept an argument, n, representing the final number. Then it will need to call itself with progressively smaller values of n until it reaches 1.
+
+function countup(n) { if (n < 1) { return []; } else { const countArray = countup(n - 1); countArray.push(n); return countArray; } } console.log(countup(5));
+
+67.Define a function called "countdown" with one parameter (n). The function should use recursion to return an array containing the integers n through 1 based on the n parameter. If the function is called with a number less than 1, the function should return an empty array. For example, calling this function with n = 5 should return the array [5, 4, 3, 2, 1]. Your function must use recursion by calling itself and must not use loops of any kind.
+
+function countdown(n) { if (n < 1) { return []; } else { const arr = countdown(n - 1); arr.unshift(n); return arr; } } console.log(countdown(5));
+
+OR
+
+function countdown(n){ return n < 1 ? [] : [n].concat(countdown(n - 1)); }
+
+68.Define a function named rangeOfNumbers with two parameters. The function should return an array of integers which begins with a number represented by the "startNum" parameter and ends with a number represented by the "endNum" parameter. The starting number will always be less than or equal to the ending number. Your function must use recursion by calling itself and not use loops of any kind. It should also work for cases where both startNum and endNum are the same.
+
+function rangeOfNumbers(startNum, endNum){ if(startNum > endNum){ return []; }else{ const countArray = rangeOfNumbers(startNum + 1, endNum); countArray.unshift(startNum); return countArray; }
+} console.log(rangeOfNumbers(1, 10));
+
+###################################### ES6 ######################################
+
+69.Using let and const, create a function printManyTimes with arg to print out a sentence "{football} is cool" on multiple lines, several times.
+
+function printManyTimes(str) { "use strict"; const SENTENCE = str + " is cool!"; for (let i = 0; i < str.length; i += 2) { console.log(SENTENCE); } } printManyTimes("football");
+
+70.An array is declared as const s = [5, 7, 2]. Within a function editInPlace, change the array to [2, 5, 7] using various element assignments.
+
+const s = [5, 7, 2]; function editInPlace(){ s.pop(); s.unshift(2); return s; } console.log(editInPlace());
+
+71.Use arrow function syntax to write a function assigned to the variable magic which returns = new Date().
+
+const magic = () => new Date();
+
+72.Use arrow function syntax to write a myConcat function which appends contents of arr2 to arr1.
+
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+73.Use a default parameter "name" with the value "Somebody" in an arrow function greeting, to create a sting "hello Somebody"
+
+const greeting = (name = "Somebody") => "Hello " + name;
+
+74.Create an arrow function "increment" to take in two parameters "number" and "value", that adds the value to the number. If no value is given, let the default value be 1.
+
+const increment = (number, value = 1) => number + value;
+
+75.Create a function howMany using rest parameter in such a way that it receives args and returns the string: You have passed "{length of args}" arguments.
+
+const howMany = (...args) => "You have passed " + args.length + " arguments." console.log(howMany(1,2,3,4,5,6));
+
+76.Create a function sum using the rest parameter and reduce function, such that the function sum is able to take any number of arguments and return their sum.
+
+const sum = (...args) => { return args.reduce((a, b) => a + b, 0); } console.log(sum(1, 2, 3));
+
+77.Use Destructuring Assignment to Extract the Values "today" and "tomorrow" from the Object HIGH_TEMPERATURES. const HIGH_TEMPERATURES = {yesterday: 75, today: 77, tomorrow: 80};
+
+const {today, tomorrow} = HIGH_TEMPERATURES;
+
+78.Use Destructuring Assignment to Assign Variables highToday and highTomorrow as the values of today and tomorrow from the HIGH_TEMPERATURES object. const HIGH_TEMPERATURES = {yesterday: 75, today: 77, tomorrow: 80};
+
+const {today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES;
+
+79.Use Destructuring Assignment to Assign the Variables "lowToday" and "highToday", to replace the values of today.low and today.high from the LOCAL_FORECAST object. const LOCAL_FORECAST = {today: { low: 64, high: 77 }, tomorrow: { low: 68, high: 80 }};
+
+const {today: { low: lowToday, high: highToday }} = LOCAL_FORECAST;
+
+80.Use destructuring assignment to swap the values of a and b so that a receives the value stored in b, and b receives the value stored in a. let a = 8, b = 6.
+
+[a, b] = [b, a];
+
+81.Create a function removeFirstTwo with an arg myArray, to use destructuring assignment with the rest parameter to perform an effective Array.prototype.slice(), so that arr is a sub-array of the original array source with the first two elements omitted. source = [1,2,3,4,5,6,7,8,9,10].
+
+const source = [1,2,3,4,5,6,7,8,9,10]; function removeFirstTwo(myArray){ const [a, b, ...arr] = myArray; return arr; } const arr = removeFirstTwo(source);
