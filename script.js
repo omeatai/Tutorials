@@ -1,8 +1,3 @@
-let myNumber = 87;
-let mySecondNumber = 11;
+let myStr = "I am a \"double quoted\" string inside \"double quotes\"." ;
 
-myNumber++;
-mySecondNumber--;
-
-console.log(myNumber++);
-console.log(mySecondNumber--);
+console.log(myStr);
