@@ -21,7 +21,7 @@ Note that the backslash itself must be escaped in order to display as a backslas
 -------------------------
 Question:
 -------------------------
-var myStr; 
+let myStr; 
 Assign the following three lines of text into the single variable myStr using escape sequences.
 
 FirstLine
@@ -33,7 +33,7 @@ Note: The indentation for SecondLine is achieved with the tab escape character, 
 -------------------------
 Solution:
 -------------------------
-
+let myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
 
 
 
