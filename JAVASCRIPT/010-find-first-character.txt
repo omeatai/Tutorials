@@ -16,6 +16,7 @@ firstLetter would have a value of the string C.
 -------------------------
 Question:
 -------------------------
+Use bracket notation to find the first character in the lastName variable and assign it to firstLetterOfLastName.
 
 -------------------------
 Solution:
