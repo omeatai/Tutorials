@@ -16,12 +16,12 @@ firstLetter would have a value of the string C.
 -------------------------
 Question:
 -------------------------
-var lastName = "Lovelace";
+let lastName = "Lovelace";
 Use bracket notation to find the first character in the lastName variable and assign it to firstLetterOfLastName.
 
 -------------------------
 Solution:
 -------------------------
-var firstLetterOfLastName = "";
-var lastName = "Lovelace";
+let firstLetterOfLastName = "";
+let lastName = "Lovelace";
 firstLetterOfLastName = lastName[0];
