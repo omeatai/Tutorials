@@ -1,0 +1,38 @@
+----------------------------
+INCREMENT AND DECREMENT
+----------------------------
+You can easily increment or add one to a variable with the ++ operator.
+
+i++;
+is the equivalent of i = i + 1;
+
+Note: The entire line becomes i++;, eliminating the need for the equal sign.
+
+You can easily decrement or decrease a variable by one with the -- operator.
+
+i--;
+is the equivalent of i = i - 1;
+
+Note: The entire line becomes i--;, eliminating the need for the equal sign.
+
+Change the code to use the -- operator on myVar.
+
+-------------------------
+Question:
+-------------------------
+let myNumber = 87;
+let mySecondNumber = 11;
+
+Increment myNumber and Decrement mySecondNumber.
+
+-----------------------
+Solution:
+-----------------------
+let myNumber = 87;
+let mySecondNumber = 11;
+
+myNumber++;
+mySecondNumber--;
+
+console.log(myNumber++);
+console.log(mySecondNumber--);
