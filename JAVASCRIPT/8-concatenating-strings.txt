@@ -1,0 +1,69 @@
+-------------------------
+CONCATENATING STRINGS
+-------------------------
+In JavaScript, when the + operator is used with a String value, it is called the concatenation operator. You can build a new string out of other strings by concatenating them together.
+
+Example
+
+'My name is Alan,' + ' I concatenate.'
+
+Note: Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+Example:
+
+var ourStr = "I come first. " + "I come second.";
+The string I come first. I come second. would be displayed in the console.
+
+We can also use the += operator to concatenate a string onto the end of an existing string variable. This can be very helpful to break a long string over several lines.
+
+Note: Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+Example:
+
+var ourStr = "I come first. ";
+ourStr += "I come second.";
+ourStr now has a value of the string I come first. I come second.
+
+Sometimes you will need to build a string, Mad Libs style. By using the concatenation operator (+), you can insert one or more variables into a string you're building.
+
+Example:
+
+var ourName = "Ifeanyi";
+var ourStr = "Hello, our name is " + ourName + ", how are you?";
+ourStr would have a value of the string Hello, our name is Ifeanyi, how are you?.
+
+Just as we can build a string over multiple lines out of string literals, we can also append variables to a string using the plus equals (+=) operator.
+
+Example:
+
+var anAdjective = "awesome!";
+var ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+ourStr would have the value freeCodeCamp is awesome!.
+
+-------------------------
+Question:
+-------------------------
+#1.Build myStr from the strings "This is the start." and "This is the end." using concatenation. Be sure to include a space between the two strings.
+
+#2.Build myStr over several lines by concatenating these two strings: 'This is the first sentence.' and 'This is the second sentence.' using the += operator. Be sure to include a space between the two strings. Start by assigning the first string to myStr, then add on the second string.
+
+#3.Set myName to a string equal to your name and build myStr with myName between the strings 'My name is' and 'and I am well!'
+
+#4.Set 'someAdjective' to a string of at least 3 characters and append it to 'myStr'.
+
+-------------------------
+Solution:
+-------------------------
+#1
+let myStr = "This is the start. " + "This is the end.";
+
+#2
+let myStr = "This is the first sentence. "; myStr += "This is the second sentence.";
+
+#3
+var myName = "Ifeanyi Omeata"; var myStr = "My name is " + myName + " and I am well!";
+
+#4
+var someAdjective;
+var someAdjective = "fantastic"; var myStr = "Learning to code is "; myStr += someAdjective;
