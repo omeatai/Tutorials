@@ -72,6 +72,14 @@ Examples
 0 != false
 In order, these expressions would evaluate to true, false, false, false, and false.
 
+The strict inequality operator (!==) is the logical opposite of the strict equality operator. It means "Strictly Not Equal" and returns false where strict equality would return true and vice versa. The strict inequality operator will not convert data types.
+
+Examples
+
+3 !==  3
+3 !== '3'
+4 !==  3
+In order, these expressions would evaluate to false, true, and true.
 
 
 -------------------------
@@ -84,7 +92,10 @@ Add the equality operator so that a function 'testEqual' with argument 'val' wil
 Use the strict equality operator in an if statement in a function 'testStrict' with argument 'val', so that the function will return the string 'Equal' when val is strictly equal to 7, and 'Not Equal' otherwise.
 
 #3
-Add the inequality operator != in the if statement of a function 'testNotEqual' so that the function will return the string 'Not Equal' when 'val' is not equivalent to 99, and 'Equal' otherwise.
+Add the inequality operator != in the if statement of a function 'testNotEqual', so that the function will return the string 'Not Equal' when 'val' is not equivalent to 99, and 'Equal' otherwise.
+
+#4
+Add the strict inequality operator to the if statement of a function 'testStrictNotEqual', so that the function will return the string 'Not Equal' when 'val' is not strictly equal to 17, and 'Equal' otherwise.
 
 -------------------------
 Solution:
@@ -115,3 +126,12 @@ function testNotEqual(val) {
   return "Equal";
 }
 testNotEqual(10);
+
+#4
+function testStrictNotEqual(val) {
+  if (val !== 17) {
+    return "Not Equal";
+  }
+  return "Equal";
+}
+testStrictNotEqual(10);
