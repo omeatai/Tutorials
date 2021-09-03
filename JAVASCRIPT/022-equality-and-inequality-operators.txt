@@ -1,0 +1,117 @@
+---------------------------------
+EQUALITY AND INEQUALITY OPERATORS
+---------------------------------
+There are many comparison operators in JavaScript. All of these operators return a boolean true or false value.
+
+The most basic operator is the equality operator ==. The equality operator compares two values and returns true if they're equivalent or false if they are not. Note that equality is different from assignment (=), which assigns the value on the right of the operator to a variable on the left.
+
+function equalityTest(myVal) {
+  if (myVal == 10) {
+     return "Equal";
+  }
+  return "Not Equal";
+}
+
+If myVal is equal to 10, the equality operator returns true, so the code in the curly braces will execute, and the function will return Equal. Otherwise, the function will return Not Equal. In order for JavaScript to compare two different data types (for example, numbers and strings), it must convert one type to another. This is known as Type Coercion. Once it does, however, it can compare terms as follows:
+
+1   ==  1
+1   ==  2
+1   == '1'
+"3" ==  3
+
+In order, these expressions would evaluate to true, false, true, and true.
+
+Strict equality (===) is the counterpart to the equality operator (==). However, unlike the equality operator, which attempts to convert both values being compared to a common type, the strict equality operator does not perform a type conversion.
+
+If the values being compared have different types, they are considered unequal, and the strict equality operator will return false.
+
+Examples
+
+3 ===  3
+3 === '3'
+These conditions would return true and false respectively.
+
+In the second example, 3 is a Number type and '3' is a String type.
+
+In the last two challenges, we learned about the equality operator (==) and the strict equality operator (===). Let's do a quick review and practice using these operators some more.
+
+If the values being compared are not of the same type, the equality operator will perform a type conversion, and then evaluate the values. However, the strict equality operator will compare both the data type and value as-is, without converting one type to the other.
+
+Examples
+
+3 == '3' returns true because JavaScript performs type conversion from string to number. 3 === '3' returns false because the types are different and type conversion is not performed.
+
+Note: In JavaScript, you can determine the type of a variable or a value with the typeof operator, as follows:
+
+typeof 3
+typeof '3'
+
+typeof 3 returns the string number, and 
+typeof '3' returns the string string.
+
+The compareEquality function in the editor compares two values using the equality operator. Modify the function so that it returns the string Equal only when the values are strictly equal.
+
+The compareEquality function in the editor compares two values using the equality operator. The function is modified so that it returns the string Equal only when the values are strictly equal.
+
+function compareEquality(a, b) {
+  if (a === b) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+compareEquality(10, "10");
+
+The inequality operator (!=) is the opposite of the equality operator. It means not equal and returns false where equality would return true and vice versa. Like the equality operator, the inequality operator will convert data types of values while comparing.
+
+Examples
+
+1 !=  2
+1 != "1"
+1 != '1'
+1 != true
+0 != false
+In order, these expressions would evaluate to true, false, false, false, and false.
+
+
+
+-------------------------
+Question:
+-------------------------
+#1
+Add the equality operator so that a function 'testEqual' with argument 'val' will return the string 'Equal' when val is equivalent to 12, and 'Not Equal' otherwise.
+
+#2
+Use the strict equality operator in an if statement in a function 'testStrict' with argument 'val', so that the function will return the string 'Equal' when val is strictly equal to 7, and 'Not Equal' otherwise.
+
+#3
+Add the inequality operator != in the if statement of a function 'testNotEqual' so that the function will return the string 'Not Equal' when 'val' is not equivalent to 99, and 'Equal' otherwise.
+
+-------------------------
+Solution:
+-------------------------
+#1
+function testEqual(val) {
+  if (val == 12) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testEqual(10);
+
+#2
+function testStrict(val) {
+  if (val === 7) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testStrict(10);
+
+#3
+function testNotEqual(val) {
+  if (val != 99) { 
+    return "Not Equal";
+  }
+  return "Equal";
+}
+testNotEqual(10);
