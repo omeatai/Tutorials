@@ -19,6 +19,7 @@ arr2 has the value ["Stimpson", "J", "cat", ["happy", "joy"]].
 -------------------------
 Question:
 -------------------------
+let myArray = [["John", 23], ["cat", 2]];
 Push ["dog", 3] onto the end of the myArray variable.
 
 -------------------------
