@@ -1,12 +1,6 @@
-let outerWear = "T-Shirt";
-
-function myOutfit() {
-  // Only change code below this line
-
-let outerWear = "sweater";
-
-  // Only change code above this line
-  return outerWear;
+function addFive(num) {
+  sum = sum + 5;
 }
+addFive(6);
 
 console.log(myOutfit());

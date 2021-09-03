@@ -13,14 +13,32 @@ answer has the value 8.
 
 plusThree takes an argument for num and returns a value equal to num + 3.
 
+A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement, when you call it, the function processes the inner code but the returned value is undefined.
+
+Example
+
+var sum = 0;
+function addSum(num) {
+  sum = sum + num;
+}
+addSum(3);
+addSum is a function without a return statement. The function will change the global sum variable but the returned value of the function is undefined.
+
 -------------------------
 Question:
 -------------------------
+#1
 Create a function timesFive that accepts one argument, multiplies it by 5, and returns the new value.
+
+#2
+Create a function addFive without any arguments. This function adds 5 to the sum variable, but its returned value is undefined.
 
 -------------------------
 Solution:
 -------------------------
+#1
 function timesFive(num){
   return num*5;
 }
+
+#2
