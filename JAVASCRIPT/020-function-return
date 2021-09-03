@@ -17,7 +17,7 @@ A function can include the return statement but it does not have to. In the case
 
 Example
 
-var sum = 0;
+let sum = 0;
 function addSum(num) {
   sum = sum + num;
 }
@@ -61,8 +61,8 @@ let result = addFive()
 console.log(result);
 
 #3
-var processed = 0;
+let processed = 0;
 function processArg(num) {
   return (num + 3) / 5;
 }
-var processed = processArg(7);
+let processed = processArg(7);
