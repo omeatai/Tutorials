@@ -3,15 +3,33 @@ GLOBAL VS LOCAL SCOPE
 -------------------------
 In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code.
 
-Variables which are declared without the var keyword are automatically created in the global scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with var.
+Variables which are declared without the let keyword are automatically created in the global scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with let.
 
--------------------------
-Question:
--------------------------
-Using var, declare a global variable named myGlobal outside of any function. Initialize it with a value of 10.
+let myGlobal = 10;
+let myLocal = 20;
 
-Inside function fun1, assign 5 to oopsGlobal without using the var keyword.
+function myfunc() {
+  myGlobal = 5;
+  let myLocal = 10;
+  console.log("myGlobal inside is: " + myGlobal);
+  console.log("myLocal inside is: " + myLocal);
+}
+myfunc();
+console.log("myGlobal outside is: " + myGlobal);
+console.log("myLocal outside is: " + myLocal);
 
--------------------------
-Solution:
--------------------------
+Variables which are declared within a function, as well as the function parameters, have local scope. That means they are only visible within that function.
+
+Here is a function myTest with a local variable called loc.
+
+function myTest() {
+  let loc = "foo";
+  console.log(loc);
+}
+myTest();
+console.log(loc);
+
+The myTest() function call will display the string foo in the console. The console.log(loc) line will throw an error, as loc is not defined outside of the function.
+
+
+

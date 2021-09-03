@@ -1,9 +1,12 @@
-let myGlobal = 10;
+let outerWear = "T-Shirt";
 
-function fun() {
-  myGlobal = 5;
-  let ourGlobal = 5;
+function myOutfit() {
+  // Only change code below this line
+
+let outerWear = "sweater";
+
+  // Only change code above this line
+  return outerWear;
 }
 
-console.log(myGlobal);
-console.log(ourGlobal);
+console.log(myOutfit());
