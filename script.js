@@ -1,6 +1,12 @@
-let sum = 0;
-function addFive() {
-  sum = sum + 5;
+
+function testGreaterThan(val) {
+  if (val > 100) {  
+    return "Over 100";
+  }
+  if (val > 10) {  
+    return "Over 10";
+  }
+  return "10 or Under";
 }
-var result = addFive()
+let result = testGreaterThan(10);
 console.log(result);
