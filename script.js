@@ -1,6 +1,6 @@
-function addFive(num) {
+let sum = 0;
+function addFive() {
   sum = sum + 5;
 }
-addFive(6);
-
-console.log(myOutfit());
+var result = addFive()
+console.log(result);
