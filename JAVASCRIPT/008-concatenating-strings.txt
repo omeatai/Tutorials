@@ -11,7 +11,8 @@ Note: Watch out for spaces. Concatenation does not add spaces between concatenat
 
 Example:
 
-var ourStr = "I come first. " + "I come second.";
+let ourStr = "I come first. " + "I come second.";
+
 The string I come first. I come second. would be displayed in the console.
 
 We can also use the += operator to concatenate a string onto the end of an existing string variable. This can be very helpful to break a long string over several lines.
@@ -20,26 +21,29 @@ Note: Watch out for spaces. Concatenation does not add spaces between concatenat
 
 Example:
 
-var ourStr = "I come first. ";
+let ourStr = "I come first. ";
 ourStr += "I come second.";
+
 ourStr now has a value of the string I come first. I come second.
 
 Sometimes you will need to build a string, Mad Libs style. By using the concatenation operator (+), you can insert one or more variables into a string you're building.
 
 Example:
 
-var ourName = "Ifeanyi";
-var ourStr = "Hello, our name is " + ourName + ", how are you?";
-ourStr would have a value of the string Hello, our name is Ifeanyi, how are you?.
+let myName = "Ifeanyi";
+let myStr = "Hello, my name is " + myName + ", how are you?";
+
+myStr would have a value of the string Hello, my name is Ifeanyi, how are you?.
 
 Just as we can build a string over multiple lines out of string literals, we can also append variables to a string using the plus equals (+=) operator.
 
 Example:
 
-var anAdjective = "awesome!";
-var ourStr = "freeCodeCamp is ";
+let anAdjective = "awesome!";
+let ourStr = "coding is ";
+
 ourStr += anAdjective;
-ourStr would have the value freeCodeCamp is awesome!.
+ourStr would have the value coding is awesome!.
 
 -------------------------
 Question:
@@ -59,11 +63,14 @@ Solution:
 let myStr = "This is the start. " + "This is the end.";
 
 #2
-let myStr = "This is the first sentence. "; myStr += "This is the second sentence.";
+let myStr = "This is the first sentence. "; 
+myStr += "This is the second sentence.";
 
 #3
-var myName = "Ifeanyi Omeata"; var myStr = "My name is " + myName + " and I am well!";
+let myName = "Ifeanyi Omeata"; 
+let myStr = "My name is " + myName + " and I am well!";
 
 #4
-var someAdjective;
-var someAdjective = "fantastic"; var myStr = "Learning to code is "; myStr += someAdjective;
+let someAdjective = "fantastic"; 
+let myStr = "Learning to code is "; 
+myStr += someAdjective;

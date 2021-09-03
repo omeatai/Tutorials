@@ -1,0 +1,32 @@
+-------------------------
+ARRAY DECLARATION
+-------------------------
+With JavaScript array variables, we can store several pieces of data in one place.
+
+You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry, like this:
+
+let sandwich = ["peanut butter", "jelly", "bread"];
+
+You can also nest arrays within other arrays, like below:
+
+let teams = [["Bulls", 23], ["White Sox", 45]]
+
+This is also called a multi-dimensional array.
+
+-------------------------
+Question:
+-------------------------
+#1
+Declare a new array 'myArray' so that it contains both a string and a number (in that order).
+
+#2
+Create a nested array called 'myArray'.
+
+-------------------------
+Solution:
+-------------------------
+#1
+let myArray = ["James", 48];
+
+#2
+let myArray = [["James", 34], ["Alice", 22]];
