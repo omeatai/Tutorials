@@ -19,3 +19,7 @@ Create a function called 'reusableFunction' which prints the string 'Hi World' t
 -------------------------
 Solution:
 -------------------------
+function reusableFunction() {
+  console.log('Hi World');
+}
+reusableFunction();
