@@ -55,6 +55,12 @@ b - bird
 c - cat
 default - stuff
 
+function switchOfStuff(val) {
+  var answer = "";
+  return answer;
+}
+switchOfStuff(1);
+
 -------------------------
 Solution:
 -------------------------
