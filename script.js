@@ -1,12 +1,11 @@
-
 function testGreaterThan(val) {
-  if (val > 100) {  
-    return "Over 100";
-  }
-  if (val > 10) {  
-    return "Over 10";
-  }
-  return "10 or Under";
+    if (val > 100) {
+        return "Over 100";
+    }
+    if (val > 10) {
+        return "Over 10";
+    }
+    return "10 or Under";
 }
 let result = testGreaterThan(10);
 console.log(result);
