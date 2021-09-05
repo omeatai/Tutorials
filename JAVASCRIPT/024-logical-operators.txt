@@ -46,6 +46,8 @@ return "Yes";
 Question:
 -------------------------
 #1
+Replace the two if statements with one statement, using the && operator, which will return the string Yes if val is less than or equal to 50 and greater than or equal to 25. Otherwise, will return the string No.
+
 function testLogicalAnd(val) {
   if (val) {
     if (val) {
@@ -56,9 +58,9 @@ function testLogicalAnd(val) {
 }
 testLogicalAnd(10);
 
-Replace the two if statements with one statement, using the && operator, which will return the string Yes if val is less than or equal to 50 and greater than or equal to 25. Otherwise, will return the string No.
-
 #2
+Combine the two if statements into one statement which returns the string Outside if val is not between 10 and 20, inclusive. Otherwise, return the string Inside.
+
 function testLogicalOr(val) {
   if (val) {
     return "Outside";
@@ -69,8 +71,6 @@ function testLogicalOr(val) {
   return "Inside";
 }
 testLogicalOr(15);
-
-Combine the two if statements into one statement which returns the string Outside if val is not between 10 and 20, inclusive. Otherwise, return the string Inside.
 
 -------------------------
 Solution:
