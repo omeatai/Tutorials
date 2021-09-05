@@ -12,6 +12,20 @@ if (num > 10) {
 -------------------------
 Question:
 -------------------------
+#1
+function testElse(val) {
+  let result = "";
+  if (val > 5) {
+    result = "Bigger than 5";
+  }
+  if (val <= 5) {
+    result = "5 or Smaller";
+  }
+  return result;
+}
+testElse(4);
+
+Combine the if statements into a single if/else statement.
 
 -------------------------
 Solution:
