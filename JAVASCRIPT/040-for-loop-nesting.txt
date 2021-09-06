@@ -18,7 +18,13 @@ This outputs each sub-element in arr one at a time. Note that for the inner loop
 -------------------------
 Question:
 -------------------------
+Modify function multiplyAll so that it returns the product of all the numbers in the sub-arrays of arr.
 
+function multiplyAll(arr) {
+  var product = 1;
+  return product;
+}
+multiplyAll([[1,2],[3,4],[5,6,7]]);
 
 -------------------------
 Solution:
