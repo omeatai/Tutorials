@@ -65,6 +65,11 @@ Push the odd numbers from 1 through 9 to myArray using a for loop.
 
 var myArray = [];
 
+#3
+Push the odd numbers from 9 through 1 to myArray using a for loop.
+
+var myArray = [];
+
 -------------------------
 Solution:
 -------------------------
