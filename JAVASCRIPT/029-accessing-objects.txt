@@ -7,15 +7,61 @@ Dot notation is what you use when you know the name of the property you're tryin
 
 Here is a sample of using dot notation (.) to read an object's property:
 
-var myObj = {
+let myObj = {
   prop1: "val1",
   prop2: "val2"
 };
-var prop1val = myObj.prop1;
-var prop2val = myObj.prop2;
+let prop1val = myObj.prop1;
+let prop2val = myObj.prop2;
 
 prop1val would have a value of the string val1, and 
 prop2val would have a value of the string val2.
+
+The second way to access the properties of an object is bracket notation ([]). If the property of the object you are trying to access has a space in its name, you will need to use bracket notation. However, you can still use bracket notation on object properties without spaces.
+
+Here is a sample of using bracket notation to read an object's property:
+
+let myObj = {
+  "Space Name": "Kirk",
+  "More Space": "Spock",
+  "NoSpace": "USS Enterprise"
+};
+myObj["Space Name"];
+myObj['More Space'];
+myObj["NoSpace"];
+
+myObj["Space Name"] would be the string Kirk, 
+myObj['More Space'] would be the string Spock, and 
+myObj["NoSpace"] would be the string USS Enterprise.
+
+Note that property names with spaces in them must be in quotes (single or double).
+
+Another use of bracket notation on objects is to access a property which is stored as the value of a variable. This can be very useful for iterating through an object's properties or when accessing a lookup table.
+
+Here is an example of using a variable to access a property:
+
+let dogs = {
+  Fido: "Mutt",  Hunter: "Doberman",  Snoopie: "Beagle"
+};
+let myDog = "Hunter";
+let myBreed = dogs[myDog];
+console.log(myBreed);
+The string Doberman would be displayed in the console.
+
+Another way you can use this concept is when the property's name is collected dynamically during the program execution, as follows:
+
+let someObj = {
+  propName: "John"
+};
+function propPrefix(str) {
+  let s = "prop";
+  return s + str;
+}
+let someProp = propPrefix("Name");
+console.log(someObj[someProp]);
+someProp would have a value of the string propName, and the string John would be displayed in the console.
+
+Note that we do not use quotes around the variable name when using it to access the property because we are using the value of the variable, not the name.
 
 -------------------------
 Question:
@@ -23,20 +69,38 @@ Question:
 #1
 Read in the property values of testObj using dot notation. Set the variable hatValue equal to the object's property hat and set the variable shirtValue equal to the object's property shirt.
 
-var testObj = {
+let testObj = {
   "hat": "ballcap",
   "shirt": "jersey",
   "shoes": "cleats"
+};
+
+#2
+Read the values of the properties an entree and the drink of testObj using bracket notation and assign them to entreeValue and drinkValue respectively.
+
+let testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
 };
 
 -------------------------
 Solution:
 -------------------------
 #1
-var testObj = {
+let testObj = {
   "hat": "ballcap",
   "shirt": "jersey",
   "shoes": "cleats"
 };
-var hatValue = testObj.hat;
-var shirtValue = testObj.shirt;
+let hatValue = testObj.hat;
+let shirtValue = testObj.shirt;
+
+#2
+let testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+let entreeValue = testObj["an entree"];
+let drinkValue = testObj["the drink"];
