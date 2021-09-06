@@ -6,7 +6,7 @@ We can also delete properties from objects like this:
 delete ourDog.bark;
 Example:
 
-var ourDog = {
+let ourDog = {
   "name": "Camper",
   "legs": 4,
   "tails": 1,
@@ -32,7 +32,7 @@ Delete the tails property from myDog. You may use either dot or bracket notation
 -------------------------
 Solution:
 -------------------------
-var myDog = {
+let myDog = {
   "name": "Happy Coder",
   "legs": 4,
   "tails": 1,

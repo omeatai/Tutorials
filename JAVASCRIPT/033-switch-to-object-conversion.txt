@@ -5,7 +5,7 @@ Objects can be thought of as a key/value storage, like a dictionary. If you have
 
 Here is an example of a simple reverse alphabet lookup:
 
-var alpha = {
+let alpha = {
   1:"Z",
   2:"Y",
   3:"X",
@@ -18,7 +18,7 @@ var alpha = {
 alpha[2];
 alpha[24];
 
-var value = 2;
+let value = 2;
 alpha[value];
 
 alpha[2] is the string Y, alpha[24] is the string C, and alpha[value] is the string Y.
@@ -29,7 +29,7 @@ Question:
 Convert the switch statement into an object called lookup. Use it to look up val and assign the associated string to the result variable.
 
 function phoneticLookup(val) {
-  var result = "";
+  let result = "";
   switch(val) {
     case "alpha":
       result = "Adams";
@@ -57,8 +57,8 @@ phoneticLookup("charlie");
 Solution:
 -------------------------
 function phoneticLookup(val) {
-  var result = "";
-  var lookup = {
+  let result = "";
+  let lookup = {
     "alpha": "Adams",
     "bravo": "Boston",
     "charlie": "Chicago",

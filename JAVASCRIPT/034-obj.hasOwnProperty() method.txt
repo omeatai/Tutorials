@@ -5,7 +5,7 @@ Sometimes it is useful to check if the property of a given object exists or not.
 
 Example
 
-var myObj = {
+let myObj = {
   top: "hat",
   bottom: "pants"
 };
@@ -28,7 +28,7 @@ function checkObj(obj, checkProp) {
 Solution:
 -------------------------
 function checkObj(obj, checkProp) {
-  var isTrue = obj.hasOwnProperty(checkProp); 
+  let isTrue = obj.hasOwnProperty(checkProp); 
   if(isTrue){
     return obj[checkProp];
   }else{
