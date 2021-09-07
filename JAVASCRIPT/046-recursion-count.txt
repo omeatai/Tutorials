@@ -34,3 +34,12 @@ function countdown(n){
 -------------------------
 Solution:
 -------------------------
+function countdown(n){
+  if(n < 1){
+    return [];
+  }else{
+    var countArray = countdown(n - 1);
+    countArray.unshift(n);
+    return countArray;
+  }  
+}
