@@ -64,7 +64,7 @@ function checkEqual(a, b) {}
 checkEqual(1, 2);
 
 #2
-In the checkSign function, use multiple conditional operators - following the recommended format used in findGreaterOrEqual - to check if a number is positive, negative or zero. The function should return positive, negative or zero.
+In the checkSign function, use multiple conditional operators - following the recommended format to check if a number is positive, negative or zero. The function should return positive, negative or zero.
 
 -------------------------
 Solution:
