@@ -12,16 +12,18 @@ In other words: The HTML DOM is a standard for how to get, change, add, or delet
 
 //View the document components
 console.log(document);
-
-
-
-
-
-
-
-
-
-
+console.log(document.domain);
+console.log(document.URL);
+console.log(document.title);
+document.title = "ABC Title";
+console.log(document.title);
+console.log(document.doctype);
+console.log(document.head);
+console.log(document.body);
+console.log(document.all);
+console.log(document.forms);
+console.log(document.links);
+console.log(document.images);
 
 Below are some examples of how you can use the document object to access and manipulate HTML.
 
