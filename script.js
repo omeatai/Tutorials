@@ -1,2 +1,2 @@
 let myHeader = document.getElementById("my-header");
-myHeader.innerHTML = "My New Header";
+myHeader.innerText = "My New Header";
