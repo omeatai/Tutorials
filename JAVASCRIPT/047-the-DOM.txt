@@ -10,6 +10,19 @@ The events for all HTML elements
 
 In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements. The document object represents your web page. If you want to access any element in an HTML page, you always start with accessing the document object.
 
+//View the document components
+console.log(document);
+
+
+
+
+
+
+
+
+
+
+
 Below are some examples of how you can use the document object to access and manipulate HTML.
 
 //Finding HTML Elements
