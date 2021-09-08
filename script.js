@@ -1,3 +1,3 @@
-let myHeader = document.getElementById("my-header");
-myHeader.innerText = "My New Header";
-myHeader.textContent = "My New Header";
+let cells = document.getElementsByClassName("cell");
+console.log(cells[1]);
+cells[1] = "my New Banana";

@@ -16,8 +16,14 @@ document.getElementById("demo").innerHTML =
 "The text from the intro paragraph is: " + element.innerHTML;
 </script>
 
-
-let myHeader = document.getElementById("my-header");
-myHeader.innerText = "My New Header";
 myHeader.textContent = "My New Header";
 myHeader.innerHTML = "<h2>My New Header</h2>";
+
+let myHeader = document.getElementById("my-header");
+let myParagraph = document.getElementById("my-paragraph");
+myHeader.innerText = "My New Header";
+myHeader.style.borderBottom = "2px #000 solid";
+myParagraph.style.fontWeight = "700";
+myParagraph.attribute = "id";   
+myParagraph.setAttribute("id", "changedColor");
+document.getElementById("changedColor").style.color = "#b56576";
