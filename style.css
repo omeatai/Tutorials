@@ -1,3 +1,9 @@
-header {
+header > h1{
   background-color: #ffd60a;
 }
+
+header > p{
+  background-color: #cb997e;
+  font-size: 1.5em;
+}
+
