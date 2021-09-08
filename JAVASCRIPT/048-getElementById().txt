@@ -15,3 +15,7 @@ const element = document.getElementById("intro");
 document.getElementById("demo").innerHTML = 
 "The text from the intro paragraph is: " + element.innerHTML;
 </script>
+
+
+let myHeader = document.getElementById("my-header");
+myHeader.innerHTML = "My New Header";
