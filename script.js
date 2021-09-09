@@ -1,5 +1,5 @@
-let myOddList = document.querySelectorAll("li:nth-child(odd)");
-let myEvenList = document.querySelectorAll("li:nth-child(even)");
+let myOddList = document.querySelectorAll("li.cell:nth-child(odd)");
+let myEvenList = document.querySelectorAll("li.cell:nth-child(even)");
 
 for(let i = 0; i < myOddList.length; i++){
   myOddList[i].style.backgroundColor = "#98c1d9";
