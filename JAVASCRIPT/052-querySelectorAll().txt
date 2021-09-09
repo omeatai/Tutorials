@@ -1,6 +1,26 @@
 -----------------------------------
 querySelectorAll Method
 -----------------------------------
+If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the querySelectorAll() method.
+
+This example returns a list of all <p> elements with class="intro".
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript HTML DOM</h2>
+<p>Finding HTML Elements by Query Selector</p>
+<p class="intro">Hello World!.</p>
+<p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+<p id="demo"></p>
+<script>
+const x = document.querySelectorAll("p.intro");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) with class="intro" is: ' + x[0].innerHTML;
+</script>
+</body>
+</html>
+
 
 
 
