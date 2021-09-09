@@ -1,10 +1,26 @@
-let myPTagsAll = document.querySelectorAll("p");
-console.log(myPTagsAll);
+let myOddList = document.querySelectorAll("li:nth-class(odd)");
+let myEvenList = document.querySelectorAll("li:nth-class(even)");
 
-for(let i = 0; i < myPTagsAll.length; i++){
-  myPTagsAll[i].style.backgroundColor = "#84a98c";
-  myPTagsAll[i].innerHTML = "This is changed!";
+for(let i = 0; i < myOddList.length; i++){
+  myOddList[i].style.backgroundColor = "#98c1d9";
+  myOddList[i].innerHTML = "Odd-" + i;
 }
+
+for(let i = 0; i < myOddList.length; i++){
+  myOddList[i].style.backgroundColor = "#98c1d9";
+  myOddList[i].innerHTML = "Odd-" + i;
+}
+
+
+
+// let myPTagsAll = document.querySelectorAll("p");
+// console.log(myPTagsAll);
+
+// for(let i = 0; i < myPTagsAll.length; i++){
+//   myPTagsAll[i].style.backgroundColor = "#84a98c";
+//   myPTagsAll[i].innerHTML = "This is changed!";
+// }
+
 
 
 // let myHeader = document.querySelector("#my-header");
