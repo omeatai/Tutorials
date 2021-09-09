@@ -87,9 +87,9 @@ type 	              Specifies the type of an input element
 
 Constraint Validation CSS Pseudo Selectors:
 
-Selector	Description
-:disabled	Selects input elements with the "disabled" attribute specified
-:invalid	Selects input elements with invalid values
-:optional	Selects input elements with no "required" attribute specified
-:required	Selects input elements with the "required" attribute specified
-:valid	Selects input elements with valid values
+Selector	          Description
+:disabled	          Selects input elements with the "disabled" attribute specified
+:invalid	          Selects input elements with invalid values
+:optional	          Selects input elements with no "required" attribute specified
+:required	          Selects input elements with the "required" attribute specified
+:valid	            Selects input elements with valid values
