@@ -1,0 +1,30 @@
+-----------------------------------
+ONLOAD AND ONUNLOAD EVENT
+-----------------------------------
+The onload and onunload events are triggered when the user enters or leaves the page.
+
+The onload event can be used to check the visitor's browser type and browser version, and load the proper version of the web page based on the information.
+
+The onload and onunload events can be used to deal with cookies.
+
+<!DOCTYPE html>
+<html>
+<body onload="checkCookies()">
+<h2>JavaScript HTML Events</h2>
+<p id="demo"></p>
+<script>
+function checkCookies() {
+  var text = "";
+  if (navigator.cookieEnabled == true) {
+    text = "Cookies are enabled.";
+  } else {
+    text = "Cookies are not enabled.";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+</body>
+</html> 
+
+
+
