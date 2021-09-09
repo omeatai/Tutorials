@@ -1,0 +1,26 @@
+-----------------------------------
+CHANGING ATTRIBUTE VALUE
+-----------------------------------
+To change the value of an HTML attribute, use this syntax:
+
+document.getElementById(id).attribute = new value
+
+This example changes the value of the src attribute of an <img> element:
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript HTML DOM</h2>
+<img id="image" src="smiley.gif" width="160" height="120">
+<script>
+document.getElementById("image").src = "landscape.jpg";
+</script>
+<p>The original image was smiley.gif, but the script changed it to landscape.jpg</p>
+</body>
+</html>
+
+Example explained:
+
+The HTML document above contains an <img> element with id="myImage"
+We use the HTML DOM to get the element with id="myImage"
+A JavaScript changes the src attribute of that element from "smiley.gif" to "landscape.jpg"

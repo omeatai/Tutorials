@@ -1,16 +1,19 @@
-let myOddList = document.querySelectorAll("li.cell:nth-child(odd)");
-let myEvenList = document.querySelectorAll("li.cell:nth-child(even)");
 
-for(let i = 0; i < myOddList.length; i++){
-  myOddList[i].style.backgroundColor = "#98c1d9";
-  myOddList[i].innerHTML = "Odd-" + i;
-}
 
-for(let i = 0; i < myEvenList.length; i++){
-  myEvenList[i].style.backgroundColor = "#e0fbfc";
-  myEvenList[i].innerHTML = "Even-" + i;
-}
 
+
+// let myOddList = document.querySelectorAll("li.cell:nth-child(odd)");
+// let myEvenList = document.querySelectorAll("li.cell:nth-child(even)");
+
+// for(let i = 0; i < myOddList.length; i++){
+//   myOddList[i].style.backgroundColor = "#98c1d9";
+//   myOddList[i].innerHTML = "Odd-" + i;
+// }
+
+// for(let i = 0; i < myEvenList.length; i++){
+//   myEvenList[i].style.backgroundColor = "#e0fbfc";
+//   myEvenList[i].innerHTML = "Even-" + i;
+// }
 
 
 // let myPTagsAll = document.querySelectorAll("p");
@@ -20,7 +23,6 @@ for(let i = 0; i < myEvenList.length; i++){
 //   myPTagsAll[i].style.backgroundColor = "#84a98c";
 //   myPTagsAll[i].innerHTML = "This is changed!";
 // }
-
 
 
 // let myHeader = document.querySelector("#my-header");
@@ -36,7 +38,6 @@ for(let i = 0; i < myEvenList.length; i++){
 // console.log(submitButton);
 
 
-
 // myHeader.innerHTML = "my Query header";
 // myHeader.style.borderBottom = '20px #ccc solid';
 // myForm.style.backgroundColor = '#ccc';
@@ -45,10 +46,6 @@ for(let i = 0; i < myEvenList.length; i++){
 // submitButton.value = "ENTER";
 // lastChildOfList.style.color = 'blue';
 // secondChildOfList.style.color = 'red';
-
-
-
-
 
 
 // // cells[2].innerHTML = "my New Mango";
