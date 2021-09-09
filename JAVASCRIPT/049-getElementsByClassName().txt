@@ -17,3 +17,12 @@ document.getElementById("demo").innerHTML =
 'The first paragraph (index 0) with class="intro" is: ' + x[0].innerHTML;
 </script>
 
+
+let cells = document.getElementsByClassName("cell");
+console.log(cells[1]);
+cells[2].innerHTML = "my New Mango";
+cells[2].style.fontWeight = 700;
+
+for(let i = 0; i < cells.length; i++){
+  cells[i].style.backgroundColor = "#84a98c";
+}

@@ -10,7 +10,8 @@ The events for all HTML elements
 
 In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements. The document object represents your web page. If you want to access any element in an HTML page, you always start with accessing the document object.
 
-//View the document components
+//The following HTML objects (and object collections) are also accessible:
+
 console.log(document);
 console.log(document.domain);
 console.log(document.URL);
@@ -25,6 +26,169 @@ console.log(document.forms);
 console.log(document.links);
 console.log(document.images);
 
+document.anchors
+document.body
+document.documentElement
+document.embeds
+document.forms
+document.head
+document.images
+document.links
+document.scripts
+document.title
+
+//document.anchors
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Finding HTML Elements Using document.anchors</h2>
+<a name="html">HTML Tutorial</a><br>
+<a name="css">CSS Tutorial</a><br>
+<a name="xml">XML Tutorial</a><br>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML =
+"Number of anchors are: " + document.anchors.length;
+</script>
+</body>
+</html>
+
+//document.body
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript HTMLDOM</h2>
+<p>Displaying document.body</p>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = document.body.innerHTML;
+</script>
+</body>
+</html>
+
+//document.documentElement
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript HTMLDOM</h2>
+<p>Displaying document.documentElement</p>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = document.documentElement.innerHTML;
+</script>
+</body>
+</html>
+
+//document.embeds
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript HTMLDOM</h2>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML =
+"Number of embeds: " + document.embeds.length;
+</script>
+</body>
+</html>
+
+//document.forms
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Finding HTML Elements Using document.forms</h2>
+<form action="">
+First name: <input type="text" name="fname" value="Donald">
+<input type="submit" value="Submit">
+</form> 
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML =
+"Number of forms: " + document.forms.length;
+</script>
+</body>
+</html>
+
+//document.head
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo</title>
+</head>
+<body>
+<h2>JavaScript HTMLDOM</h2>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML =
+document.head;
+</script>
+</body>
+</html>
+
+//document.images
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Finding HTML Elements Using document.images</h2>
+<img src="pic_htmltree.gif" width="486" height="266">
+<img src="pic_navigate.gif" width="362" height="255">
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML =
+"Number of images: " + document.images.length;
+</script>
+</body>
+</html>
+
+//document.links
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Finding HTML Elements Using document.links</h2>
+<p>
+<a href="/html/default.asp">HTML</a>
+<br>
+<a href="/css/default.asp">CSS</a>
+</p>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML =
+"Number of links: " + document.links.length;
+</script>
+</body>
+</html>
+
+//document.scripts
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Finding HTML Elements Using document.scripts</h2>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML =
+"Number of scripts: " + document.scripts.length;
+</script>
+</body>
+</html>
+
+//document.title
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>W3Schools Demo</title>
+  </head>
+<body>
+<h2>Finding HTML Elements Using document.title</h2>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML =
+"The title of this document is: " + document.title;
+</script>
+</body>
+</html>
+
+
+###########################################################
 Below are some examples of how you can use the document object to access and manipulate HTML.
 
 //Finding HTML Elements

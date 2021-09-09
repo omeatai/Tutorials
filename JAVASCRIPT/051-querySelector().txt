@@ -1,3 +1,8 @@
+-----------------------------------
+querySelector Method
+-----------------------------------
+If you want to find the first HTML element that matches a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the querySelector() method.
+
 let myHeader = document.querySelector("#my-header");
 let myForm = document.querySelector("form");
 let myInput = document.querySelector("input");
@@ -19,16 +24,3 @@ submitButton.value = "ENTER";
 lastChildOfList.style.color = 'blue';
 secondChildOfList.style.color = 'red';
 
-
-// for(let i = 0; i < li.length; i++){
-//   li[i].style.backgroundColor = "#84a98c";
-// }
-
-
-
-// cells[2].innerHTML = "my New Mango";
-// cells[2].style.fontWeight = 700;
-
-// for(let i = 0; i < cells.length; i++){
-//   cells[i].style.backgroundColor = "#84a98c";
-// }
