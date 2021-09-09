@@ -22,5 +22,18 @@ document.getElementById("demo").innerHTML =
 </html>
 
 
+let myPTagsAll = document.querySelectorAll("p");
+console.log(myPTagsAll);
+
+for(let i = 0; i < myPTagsAll.length; i++){
+  myPTagsAll[i].style.backgroundColor = "#84a98c";
+  myPTagsAll[i].innerHTML = "This is changed!";
+}
+
+
+
+
+
+
 
 
