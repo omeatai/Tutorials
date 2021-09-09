@@ -1,14 +1,14 @@
-let myOddList = document.querySelectorAll("li:nth-class(odd)");
-let myEvenList = document.querySelectorAll("li:nth-class(even)");
+let myOddList = document.querySelectorAll("li:nth-child(odd)");
+let myEvenList = document.querySelectorAll("li:nth-child(even)");
 
 for(let i = 0; i < myOddList.length; i++){
   myOddList[i].style.backgroundColor = "#98c1d9";
   myOddList[i].innerHTML = "Odd-" + i;
 }
 
-for(let i = 0; i < myOddList.length; i++){
-  myOddList[i].style.backgroundColor = "#98c1d9";
-  myOddList[i].innerHTML = "Odd-" + i;
+for(let i = 0; i < myEvenList.length; i++){
+  myEvenList[i].style.backgroundColor = "#e0fbfc";
+  myEvenList[i].innerHTML = "Even-" + i;
 }
 
 
