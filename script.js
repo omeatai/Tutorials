@@ -1,3 +1,10 @@
+let myList = document.querySelector("#myList");
+myList.parentNode.attribute = "id"; 
+myList.parentNode.setAttribute("id", "changedColor");
+document.getElementById("changedColor").style.backgroundColor = "#b56576";
+console.log(myList.parentNode);
+console.log(myList.parentNode.nodeName);
+console.log(myList.parentNode.nodeValue);
 
 
 

@@ -19,7 +19,7 @@ NOTE: As you write code, you should regularly add comments to clarify the functi
 -------------------------
 Question:
 -------------------------
-Create in-line and multi-line style comments..
+Create in-line and multi-line comments..
 
 -----------------------
 Solution:
