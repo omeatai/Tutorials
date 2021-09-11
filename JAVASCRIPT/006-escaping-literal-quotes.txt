@@ -12,7 +12,7 @@ This signals to JavaScript that the following quote is not the end of the string
 Alan said, "Peter is learning JavaScript".
 
 -------------------------
-Question:
+Task:
 -------------------------
 let myStr = "";
 Use backslashes to assign a string to the myStr variable so that if you were to print it to the console, you would see:
