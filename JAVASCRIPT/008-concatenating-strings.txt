@@ -46,7 +46,7 @@ ourStr += anAdjective;
 ourStr would have the value coding is awesome!.
 
 -------------------------
-Question:
+Task:
 -------------------------
 #1.Build myStr from the strings "This is the start." and "This is the end." using concatenation. Be sure to include a space between the two strings.
 
