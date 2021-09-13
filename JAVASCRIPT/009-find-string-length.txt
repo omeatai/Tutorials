@@ -3,20 +3,20 @@ FIND STRING LENGTH
 -------------------------
 You can find the length of a String value by writing .length after the string variable or string literal.
 
-console.log("Alan Peter".length);
+console.log("Ada Peters".length);
 The value 10 would be displayed in the console.
 
 For example, if we created a variable let firstName = "Ada", we could find out how long the string Ada is by using the firstName.length property.
 
 -------------------------
-Question:
+Task:
 -------------------------
-let lastName = "Lovelace";
+let lastName = "drewmore";
 Count the number of characters in the lastName variable and assign it to lastNameLength.
 
 -------------------------
 Solution:
 -------------------------
 let lastNameLength = 0;
-let lastName = "Lovelace";
+let lastName = "drewmore";
 lastNameLength = lastName.length;
