@@ -16,7 +16,7 @@ The first console.log will display the value 6, and
 the second will display the value [1, 4].
 
 -------------------------
-Question:
+Task:
 -------------------------
 let myArray = [["John", 23], ["cat", 2]];
 Use the .pop() function to remove the last item from myArray, assigning the popped off value to removedFromMyArray.
