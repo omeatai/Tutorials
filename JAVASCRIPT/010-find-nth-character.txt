@@ -44,7 +44,7 @@ var thirdToLastLetter = firstName[firstName.length - 3];
 thirdToLastLetter would have a value of the string s.
 
 -------------------------
-Question:
+Task:
 -------------------------
 #1
 let lastName = "Lovelace";

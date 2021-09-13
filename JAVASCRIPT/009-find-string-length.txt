@@ -20,3 +20,22 @@ Solution:
 let lastNameLength = 0;
 let lastName = "drewmore";
 lastNameLength = lastName.length;
+
+
+-------------------------
+Task:
+-------------------------
+let lastName = "drewmore";
+Count the number of characters in the lastName variable and assign it to lastNameLength.
+
+let lastName = "drewmore";
+let lastNameLength = lastName.length;
+console.log(lastNameLength);
+
+let firstName = "Ada";
+let lastName = "Peters";
+let firstNameLength = firstName.length;
+let lastNameLength = lastName.length;
+
+console.log(firstNameLength);
+console.log(lastNameLength);
