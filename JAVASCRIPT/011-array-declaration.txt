@@ -14,7 +14,7 @@ let teams = [["Bulls", 23], ["White Sox", 45]]
 This is also called a multi-dimensional array.
 
 -------------------------
-Question:
+Task:
 -------------------------
 #1
 Declare a new array 'myArray' so that it contains both a string and a number (in that order).

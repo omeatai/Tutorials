@@ -1,5 +1,5 @@
 -------------------------
-FIND FIRST CHARACTER
+FIND NTH CHARACTER
 -------------------------
 Bracket notation is a way to get a character at a specific index within a string.
 
