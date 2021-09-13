@@ -17,7 +17,7 @@ arr1 now has the value [1, 2, 3, 4] and
 arr2 has the value ["Stimpson", "J", "cat", ["happy", "joy"]].
 
 -------------------------
-Question:
+Task:
 -------------------------
 let myArray = [["John", 23], ["cat", 2]];
 Push ["dog", 3] onto the end of the myArray variable.
