@@ -31,5 +31,18 @@ console.log(loc);
 
 The myTest() function call will display the string foo in the console. The console.log(loc) line will throw an error, as loc is not defined outside of the function.
 
+-------------------------
+Task:
+-------------------------
+Create a myTest() function to output a local variable with value "This is Local" and a global variable with value "This is global".
 
-
+-------------------------
+Solution:
+-------------------------
+function myTest() {
+  let myLocal = "This is Local";
+  myGlobal = "This is global";
+  console.log(myLocal);
+}
+myTest();
+console.log(myGlobal);
