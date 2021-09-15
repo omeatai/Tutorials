@@ -27,7 +27,7 @@ test(true) returns the string It was true, and test(false) returns the string It
 When test is called with a value of true, the if statement evaluates myCondition to see if it is true or not. Since it is true, the function returns It was true. When we call test with a value of false, myCondition is not true and the statement in the curly braces is not executed and the function returns It was false.
 
 -------------------------
-Question:
+Task:
 -------------------------
 Create an if statement inside the function 'trueOrFalse' to return 'Yes, that was true' if the parameter 'wasThatTrue' is true and return 'No, that was false' otherwise.
 
@@ -35,8 +35,10 @@ Create an if statement inside the function 'trueOrFalse' to return 'Yes, that wa
 Solution:
 -------------------------
 function trueOrFalse(wasThatTrue) {
-  if(wasThatTrue){
-    return "Yes, that was true";
-  }
-  return "No, that was false";
+	if (wasThatTrue) {
+		return "Yes, that was true";
+	}
+	return "No, that was false";
 }
+let result = trueOrFalse(10 < 5);
+console.log(result);

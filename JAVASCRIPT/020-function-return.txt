@@ -33,7 +33,7 @@ ourSum = sum(5, 12);
 will call sum function, which returns a value of 17 and assigns it to ourSum variable.
 
 -------------------------
-Question:
+Task:
 -------------------------
 #1
 Create a function timesFive that accepts one argument, multiplies it by 5, and returns the new value.
