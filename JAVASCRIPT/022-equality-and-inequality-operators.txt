@@ -83,7 +83,7 @@ Examples
 In order, these expressions would evaluate to false, true, and true.
 
 -------------------------
-Question:
+Task:
 -------------------------
 #1
 Add the equality operator so that a function 'testEqual' with argument 'val' will return the string 'Equal' when val is equivalent to 12, and 'Not Equal' otherwise.
