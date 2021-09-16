@@ -10,7 +10,7 @@ if (num > 10) {
 }
 
 -------------------------
-Question:
+Task:
 -------------------------
 #1
 Combine the if statements into a single if/else statement.
