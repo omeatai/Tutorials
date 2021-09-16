@@ -69,7 +69,7 @@ switch(val) {
 }
 
 -------------------------
-Question:
+Task:
 -------------------------
 #1
 Write a switch statement which tests val and sets answer for the following conditions:
