@@ -12,7 +12,7 @@ Here's a sample cat object:
 let cat = {
   "name": "Whiskers",
   "legs": 4,
-  "tails": 1,
+  "tails": 1,6
   "enemies": ["Water", "Dogs"]
 };
 

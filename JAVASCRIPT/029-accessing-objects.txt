@@ -64,7 +64,7 @@ someProp would have a value of the string propName, and the string John would be
 Note that we do not use quotes around the variable name when using it to access the property because we are using the value of the variable, not the name.
 
 -------------------------
-Question:
+Task:
 -------------------------
 #1
 Read in the property values of testObj using dot notation. Set the variable hatValue equal to the object's property hat and set the variable shirtValue equal to the object's property shirt.
