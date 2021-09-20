@@ -25,7 +25,7 @@ After the last line shown above, ourDog looks like:
 }
 
 -------------------------
-Question:
+Task:
 -------------------------
 Delete the tails property from myDog. You may use either dot or bracket notation.
 
