@@ -24,7 +24,7 @@ alpha[value];
 alpha[2] is the string Y, alpha[24] is the string C, and alpha[value] is the string Y.
 
 -------------------------
-Question:
+Task:
 -------------------------
 Convert the switch statement into an object called lookup. Use it to look up val and assign the associated string to the result variable.
 
