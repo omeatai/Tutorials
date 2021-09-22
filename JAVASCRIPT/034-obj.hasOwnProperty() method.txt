@@ -42,3 +42,20 @@ function checkObj(obj, checkProp) {
     return "Not Found";
   }
 }
+
+let myResult = {
+	Maths: 87,
+	English: 80,
+	Physics: 92,
+	Biology: 84,
+};
+
+function checkObj(obj, checkProp) {
+	let isTrue = obj.hasOwnProperty(checkProp);
+	if (isTrue) {
+		return "The Property " + checkProp + " with value " + obj[checkProp] + " exists in the Object.";
+	} else {
+		return "Not Found";
+	}
+}
+console.log(checkObj(myResult, "Arts"));
