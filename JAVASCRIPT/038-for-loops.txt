@@ -53,40 +53,30 @@ for (var i = 10; i > 0; i -= 2) {
 ourArray will now contain [10,8,6,4,2]. 
 
 -------------------------
-Question:
+Task:
 -------------------------
-#1
-Use a for loop to push the values 1 through 5 onto myArray.
+//1.Use a for loop to push the values 1 through 5 onto an array "myArray".
 
-var myArray = [];
-
-#2
-Push the odd numbers from 1 through 9 to myArray using a for loop.
-
-var myArray = [];
-
-#3
-Push the odd numbers from 9 through 1 to myArray using a for loop.
-
-var myArray = [];
-
--------------------------
-Solution:
--------------------------
-#1
-var myArray = [];
-for(var i = 1; i <= 5; i++){
+let myArray = [];
+for(let i = 1; i <= 5; i++) {
   myArray.push(i);
 }
+console.log(myArray);
 
-#2
-var myArray = [];
-for(var i = 1; i <=9 ; i += 2){
+
+//2.Push the odd numbers from 1 through 9 to myArray using a for loop.
+
+let myArray = [];
+for(let i = 1; i < 10; i += 2) {
   myArray.push(i);
 }
+console.log(myArray);
 
-#3
-var myArray = [];
-for(var i=9; i>0; i -= 2){
+
+//3.Push the even numbers from 9 through 1 to myArray using a for loop.
+
+let myArray = [];
+for(let i = 8; i > 0; i -= 2) {
   myArray.push(i);
 }
+console.log(myArray);
