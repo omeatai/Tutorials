@@ -14,18 +14,24 @@ while(i < 5) {
 In the code example above, the while loop will execute 5 times and append the numbers 0 through 4 to ourArray.
 
 -------------------------
-Question:
+Task:
 -------------------------
-Add the numbers 5 through 0 (inclusive) in descending order to myArray using a while loop.
+// 1.Create a while loop that will execute 5 times and append the numbers 0 through 4 to the array "ourArray".
 
-var myArray = [];
+let ourArray = [];
+let i = 0;
+while(i < 5) {
+  ourArray.push(i);
+  i++;
+}
+console.log(ourArray);
 
--------------------------
-Solution:
--------------------------
-var myArray = [];
-var i = 5;
-while(i >= 0){
+// 2.Add the numbers 5 through 0 (inclusive) in descending order to myArray using a while loop.
+
+let myArray = [];
+let i = 5;
+while(i >= 0) {
   myArray.push(i);
   i--;
 }
+console.log(myArray);
