@@ -26,32 +26,20 @@ ourStorage.cabinet["top drawer"].folder2 would be the string secrets, and ourSto
 -------------------------
 Task:
 -------------------------
-Access the myStorage object and assign the contents of the glove box property to the gloveBoxContents variable. Use dot notation for all properties where possible, otherwise use bracket notation.
+1.Access the sub-properties "folder2" and "drawer" of the object ourStorage and log the values.
 
-let myStorage = {
-  "car": {
-    "inside": {
-      "glove box": "maps",
-      "passenger seat": "crumbs"
-     },
-    "outside": {
-      "trunk": "jack"
-    }
+let ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": { 
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
   }
 };
 
--------------------------
-Solution:
--------------------------
-let myStorage = {
-  "car": {
-    "inside": {
-      "glove box": "maps",
-      "passenger seat": "crumbs"
-     },
-    "outside": {
-      "trunk": "jack"
-    }
-  }
-};
-let gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(ourStorage.cabinet["top drawer"].folder2);
+console.log(ourStorage.desk.drawer);
