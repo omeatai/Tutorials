@@ -43,3 +43,22 @@ let ourStorage = {
 
 console.log(ourStorage.cabinet["top drawer"].folder2);
 console.log(ourStorage.desk.drawer);
+
+#####################
+
+2.Access the myStorage object and assign the contents of the glove box property to the gloveBoxContents variable. 
+
+let myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+let gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents);
