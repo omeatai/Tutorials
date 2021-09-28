@@ -31,33 +31,34 @@ ourPets[0].names[1] would be the string Fluffy, and
 ourPets[1].names[0] would be the string Spot.
 
 -------------------------
-Question:
+Task:
 -------------------------
-Using dot and bracket notation, set the variable secondTree to the second item in the trees list from the myPlants object.
+// 1.Access the values "Fluffy" and "Spot" in the array ourPets.
 
-let myPlants = [
+let ourPets = [
   {
-    type: "flowers",
-    list: [
-      "rose",
-      "tulip",
-      "dandelion"
+    animalType: "cat",
+    names: [
+      "Meowzer",
+      "Fluffy",
+      "Kit-Cat"
     ]
   },
   {
-    type: "trees",
-    list: [
-      "fir",
-      "pine",
-      "birch"
+    animalType: "dog",
+    names: [
+      "Spot",
+      "Bowser",
+      "Frankie"
     ]
   }
 ];
-let secondTree = "";
 
--------------------------
-Solution:
--------------------------
+console.log(ourPets[0].names[1]);
+console.log(ourPets[1].names[0]);
+
+// 2.Using dot and bracket notation, set the variable 'secondTree' to the second item in the trees list from the myPlants object.
+
 let myPlants = [
   {
     type: "flowers",
@@ -78,3 +79,4 @@ let myPlants = [
 ];
 
 let secondTree = myPlants[1].list[1];
+console.log(secondTree);
