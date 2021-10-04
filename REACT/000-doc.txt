@@ -16,3 +16,13 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+######################
+Expressions in JSX
+######################
+const name = "David";
+const el = <p>Hello, {name}</p>;
+
+ReactDOM.render(
+  el,
+  document.getElementById('root')
+);
