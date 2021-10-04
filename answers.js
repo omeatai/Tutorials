@@ -118,10 +118,10 @@ const myArray = [1,2,3,4,5];
 
 function sum(arr, n) {
   if(n <= 0){
-    result = 0;
+    return 0;
+  }else{
+    return sum(arr, n - 1) + arr[n-1];
   }
-  result = sum(arr, n-1) +  arr[n-1];
-  return result;
 }
 
 console.log(sum(myArray, 2));
