@@ -103,11 +103,16 @@
 // 041-DO WHILE LOOP
 //######################
 //######################
+// 1.Use the do while loop to create an array of values that should look like [0, 1, 2, 3, 4].
 
+let ourArray = [];
+let i = 0;
+do {
+  ourArray.push(i);
+  i++;
+}while(i < 5);
 
-
-
-
+console.log(ourArray);
 
 
 

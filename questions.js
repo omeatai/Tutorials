@@ -1,51 +1,5 @@
 
 
-//######################
-//######################
-// FOREACH METHOD
-//######################
-//######################
-
-// -------------------------
-// Task:
-// -------------------------
-
-/*
-1.Use forEach method to loop through the array and log the values.
-const nums = [9,8,7,6,5,4,3,2,1];
-*/
-
-/* 
-2.Use forEach method to loop through the array and log the square of each value.
-const nums = [9,8,7,6,5,4,3,2,1];
-*/
-
-/*
-3.Use forEach method to loop through the array and log the even numbers amongst the values.
-const nums = [9,8,7,6,5,4,3,2,1];
-*/
-
-/*
-4.Use forEach method to loop through the array and log the score values in this form:
-"The {title} has the score {score}/100."
-
-const movies = [
-  {
-    title: 'Amadeus',
-    score: 99
-  },
-  {
-    title: 'Game of Thrones',
-    score: 86
-  },
-  {
-    title: 'Viral',
-    score: 42
-  }
-];
-
-*/
-
 
 
 
