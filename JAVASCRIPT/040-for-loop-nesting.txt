@@ -18,24 +18,33 @@ This outputs each sub-element in arr one at a time. Note that for the inner loop
 -------------------------
 Task:
 -------------------------
-Modify a function 'multiplyAll' so that it returns the product of all the numbers in the sub-arrays of arr.
+// 1.Log each sub-element in arr one at a time using for loop.
+// let arr = [[1,2], [3,4], [5,6]];
 
-function multiplyAll(arr) {
-  var product = 1;
-  return product;
+let arr = [[1,2], [3,4], [5,6]];
+for(let i = 0; i < arr.length; i++) {
+  for(let j = 0; j < arr[i].length; j++){
+    console.log(arr[i][j]);
+  }  
 }
-multiplyAll([[1,2],[3,4],[5,6,7]]);
 
--------------------------
-Solution:
--------------------------
+//2.Modify a function 'multiplyAll' so that it returns the product of all the numbers in the sub-arrays of arr.
+// 
+// function multiplyAll(arr) {
+//   let product = 1;
+//   return product;
+// }
+// multiplyAll([[1,2],[3,4],[5,6,7]]);
+
 function multiplyAll(arr) {
-  var product = 1;
-  for(var i=0; i < arr.length; i++){
-    for(var j=0; j < arr[i].length; j++){
+  let product = 1;
+  for(let i = 0; i < arr.length; i++) {
+    for(let j = 0; j < arr[i].length; j++) {
       product *= arr[i][j];
     }
   }
   return product;
 }
-multiplyAll([[1,2],[3,4],[5,6,7]]);
+
+let result = multiplyAll([[1,2],[3,4],[5,6,7]]);
+console.log(result);

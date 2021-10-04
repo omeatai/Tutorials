@@ -9,3 +9,213 @@ Question:
 -------------------------
 Solution:
 -------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let myList = document.querySelector("#myList");
+myList.parentNode.attribute = "id"; 
+myList.parentNode.setAttribute("id", "changedColor");
+document.getElementById("changedColor").style.backgroundColor = "#b56576";
+console.log(myList.parentNode);
+console.log(myList.parentNode.nodeName);
+console.log(myList.parentNode.nodeValue);
+
+
+
+
+// let myOddList = document.querySelectorAll("li.cell:nth-child(odd)");
+// let myEvenList = document.querySelectorAll("li.cell:nth-child(even)");
+
+// for(let i = 0; i < myOddList.length; i++){
+//   myOddList[i].style.backgroundColor = "#98c1d9";
+//   myOddList[i].innerHTML = "Odd-" + i;
+// }
+
+// for(let i = 0; i < myEvenList.length; i++){
+//   myEvenList[i].style.backgroundColor = "#e0fbfc";
+//   myEvenList[i].innerHTML = "Even-" + i;
+// }
+
+
+// let myPTagsAll = document.querySelectorAll("p");
+// console.log(myPTagsAll);
+
+// for(let i = 0; i < myPTagsAll.length; i++){
+//   myPTagsAll[i].style.backgroundColor = "#84a98c";
+//   myPTagsAll[i].innerHTML = "This is changed!";
+// }
+
+
+// let myHeader = document.querySelector("#my-header");
+// let myForm = document.querySelector("form");
+// let myInput = document.querySelector("input");
+// let submitButton = document.querySelector("input[type='submit']");
+// let lastChildOfList = document.querySelector(".cell:last-child");
+// let secondChildOfList = document.querySelector(".cell:nth-child(2)");
+
+// console.log(myHeader);
+// console.log(myForm);
+// console.log(myInput);
+// console.log(submitButton);
+
+
+// myHeader.innerHTML = "my Query header";
+// myHeader.style.borderBottom = '20px #ccc solid';
+// myForm.style.backgroundColor = '#ccc';
+// myForm.style.border = '10px #ccc solid';
+// myInput.value = "my sample Text";
+// submitButton.value = "ENTER";
+// lastChildOfList.style.color = 'blue';
+// secondChildOfList.style.color = 'red';
+
+
+// // cells[2].innerHTML = "my New Mango";
+// // cells[2].style.fontWeight = 700;
+
+// // for(let i = 0; i < cells.length; i++){
+// //   cells[i].style.backgroundColor = "#84a98c";
+// // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header > h1{
+  background-color: #ffd60a;
+}
+
+header > p{
+  background-color: #98c1d9;
+  font-size: 1.5em;
+  
+}
+
+main ol {
+   padding: 0;
+   list-style-type: none; 
+}
+
+li:hover{
+  background-color: #ffbf69;
+}
+
+.cell {
+  border: 2px #000 solid;
+}
+
+.active {
+  background-color: #f5cac3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning DOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="my-header">Javascript DOM</h1>
+    <p id="my-paragraph">This is a course on learning DOM.</p>
+  </header>
+  <main>
+      <ol id="myList">
+        <li class="cell active">Apple</li>
+        <li class="cell">Banana 
+          <ul>
+            <li>chopped</li>
+            <li>whole</li>
+            <li>smoothie</li>
+          </ul>
+        </li>
+        <li class="cell">Mango</li>
+      </ol>
+      <div>
+        <form action="">
+          <input type="text">
+          <input type="submit">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+  </main>
+  <footer>
+    <hr>
+    <p id="footer">Ifeanyi Omeata, &copy; 2021.</p>
+  </footer>  
+  <script src="script.js"></script>
+</body>
+</html>
+
