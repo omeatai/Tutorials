@@ -7,5 +7,12 @@ cd my-app
 npm start 
 
 ######################
-CREATE REACT APP
+SET INDEX.JS PAGE
 ######################
+//src/index.js
+
+ReactDOM.render(
+  <h1>Hello, React!</h1>,
+  document.getElementById('root')
+);
+
