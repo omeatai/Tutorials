@@ -102,20 +102,29 @@
 //######################
 // 1.Write a recursive function, sum(arr, n), that returns the sum of the first n elements of an array arr.
 
+const myArray = [1,2,3,4,5];
+
+// function sum(arr, n) {
+//   let result = 0;
+//   for(let i = 0; i < n; i++){
+//     result += arr[i];
+//   }
+//   return result;
+// }
+// console.log(sum(myArray, 2));
+
+//sum(arr, n) = sum(arr, n-1) +  arr[n-1]
+// 6          =       3       +    3
+
 function sum(arr, n) {
-  let result = 0;
-  for(let i = 0; i < n; i++){
-    result += arr[i];
+  if(n <= 0){
+    result = 0;
   }
+  result = sum(arr, n-1) +  arr[n-1];
   return result;
 }
-console.log(sum([1,2,3,4,5], 5));
 
-
-
-
-
-
+console.log(sum(myArray, 2));
 
 
 
