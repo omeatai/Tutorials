@@ -12,8 +12,8 @@ do {
 
 The example above behaves similar to other types of loops, and the resulting array will look like [0, 1, 2, 3, 4]. However, what makes the do...while different from other loops is how it behaves when the condition fails on the first check. Let's see this in action: Here is a regular while loop that will run the code in the loop as long as i < 5:
 
-var ourArray = []; 
-var i = 5;
+let ourArray = []; 
+let i = 5;
 while (i < 5) {
   ourArray.push(i);
   i++;
@@ -35,8 +35,8 @@ Task:
 -------------------------
 Change the while loop in the code to a do...while loop so the loop will push only the number 10 to myArray, and i will be equal to 11 when your code has finished running.
 
-var myArray = [];
-var i = 10;
+let myArray = [];
+let i = 10;
 while (i < 10) {
   myArray.push(i);
   i++;
