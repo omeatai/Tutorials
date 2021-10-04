@@ -33,7 +33,7 @@ In this case, we initialize the value of i to 5, just like we did with the while
 -------------------------
 Task:
 -------------------------
-Change the while loop in the code to a do...while loop so the loop will push only the number 10 to myArray, and i will be equal to 11 when your code has finished running.
+Change the while loop in the code to a do...while loop so the loop will push only the number 10 to myArray, and it will be equal to 11 when your code has finished running.
 
 let myArray = [];
 let i = 10;
