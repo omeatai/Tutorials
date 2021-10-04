@@ -109,7 +109,7 @@ function sum(arr, n) {
   }
   return result;
 }
-console.log(sum([1,2,3,4,5], 5))
+console.log(sum([1,2,3,4,5], 5));
 
 
 
