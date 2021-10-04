@@ -115,6 +115,14 @@
 // console.log(ourArray);
 
 // 2.Change the while loop in the code to a do...while loop so the loop will push only the number 10 to myArray, and it will be equal to 11 when the code has finished running.
+// 
+// let myArray = [];
+// let i = 10;
+// while (i < 10) {
+//   myArray.push(i);
+//   i++;
+// }
+
 
 let myArray = [];
 let i = 10;
@@ -122,8 +130,6 @@ while (i < 10) {
   myArray.push(i);
   i++;
 }
-
-
 
 
 
