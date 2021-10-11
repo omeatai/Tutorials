@@ -38,6 +38,17 @@ cd my-app
 npm start 
 
 ######################
+4. CHANGING THE OUTPUT
+######################
+
+ReactDOM.render(
+  <h1>Hello, React!</h1>,
+  document.getElementById('root')
+);
+
+
+
+######################
 SET INDEX.JS PAGE
 ######################
 //src/index.js
